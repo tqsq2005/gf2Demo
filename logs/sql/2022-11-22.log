@@ -1,0 +1,14 @@
+2022-11-22 15:12:05.800 [DEBU] {59b51770a1d629176f1c9d64c74622ce} [  7 ms] [default] [gfDemo] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2022-11-22 15:12:05.811 [DEBU] {59b51770a1d629176f1c9d64c74622ce} [  4 ms] [default] [gfDemo] [rows:1  ] INSERT INTO `rotation_info`(`updated_at`,`created_at`,`sort`,`pic_url`,`link`) VALUES('2022-11-22 15:12:05','2022-11-22 15:12:05',1,'http://www.baidu.com','http://www.qq.com') 
+2022-11-22 16:14:01.748 [DEBU] {6b32f39e02da291748f6a11bdbccba85} [ 10 ms] [default] [gfDemo] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2022-11-22 16:14:01.757 [DEBU] {6b32f39e02da291748f6a11bdbccba85} [  2 ms] [default] [gfDemo] [rows:1  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE (`id`=7) AND `deleted_at` IS NULL LIMIT 1
+2022-11-22 16:14:24.656 [DEBU] {844fa3f607da291749f6a11b06f1d59a} [  1 ms] [default] [gfDemo] [rows:0  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE (`id`=8) AND `deleted_at` IS NULL LIMIT 1
+2022-11-22 16:19:21.329 [DEBU] {56779d094dda29171858bc426bf36042} [  2 ms] [default] [gfDemo] [rows:7  ] SHOW FULL COLUMNS FROM `rotation_info`
+2022-11-22 16:19:21.332 [DEBU] {56779d094dda29171858bc426bf36042} [  0 ms] [default] [gfDemo] [rows:0  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE (`id`=8) AND `deleted_at` IS NULL LIMIT 1
+2022-11-22 17:34:55.128 [DEBU] {ca1c2fa56cde29171958bc426d769451} [  2 ms] [default] [gfDemo] [rows:0  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE (`id`=0) AND `deleted_at` IS NULL LIMIT 1
+2022-11-22 18:11:18.099 [DEBU] {f3b8cee668e02917f208a745a634f36a} [  7 ms] [default] [gfDemo] [rows:0  ] [txid:1] BEGIN
+2022-11-22 18:11:18.110 [DEBU] {f3b8cee668e02917f208a745a634f36a} [  6 ms] [default] [gfDemo] [rows:7  ] [txid:1] SHOW FULL COLUMNS FROM `rotation_info`
+2022-11-22 18:11:18.116 [DEBU] {f3b8cee668e02917f208a745a634f36a} [  2 ms] [default] [gfDemo] [rows:1  ] [txid:1] UPDATE `rotation_info` SET `link`='http://top-booking.com',`pic_url`='other_pic_url',`updated_at`='2022-11-22 18:11:18',`sort`=3 WHERE (`id`=7) AND `deleted_at` IS NULL
+2022-11-22 18:11:18.120 [DEBU] {f3b8cee668e02917f208a745a634f36a} [  2 ms] [default] [gfDemo] [rows:0  ] [txid:1] COMMIT
+2022-11-22 18:11:31.261 [DEBU] {8413d7f86be02917f308a74578f907c1} [  1 ms] [default] [gfDemo] [rows:0  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE (`id`=0) AND `deleted_at` IS NULL LIMIT 1
+2022-11-22 18:11:54.209 [DEBU] {fc738d5071e02917f508a745c47bcfaf} [  4 ms] [default] [gfDemo] [rows:1  ] SELECT `id`,`pic_url`,`link`,`sort`,`created_at`,`updated_at`,`deleted_at` FROM `rotation_info` WHERE (`id`=7) AND `deleted_at` IS NULL LIMIT 1

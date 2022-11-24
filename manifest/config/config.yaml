@@ -1,0 +1,28 @@
+# HTTP Server.
+server:
+  address:     ":8000"
+  openapiPath: "/api.json"
+  swaggerPath: "/swagger"
+  dumpRouterMap: true
+  routeOverWrite: true
+  accessLogEnabled: true
+
+# Logger configurations.
+logger:
+  path:    "logs/default"
+  level:   "all"
+  stdout:  true
+  ctxKeys: ["RequestId"]
+
+# Database.
+database:
+  logger:
+    path: "logs/sql"
+    level: "all"
+    stdout: true
+    ctxKeys: [ "RequestId" ]
+
+  default:
+    link:   "mysql:homestead:secret@tcp(192.168.10.10:3306)/gfDemo"
+    debug:  true
+
